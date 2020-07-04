@@ -66,15 +66,10 @@ mmdetection
 │   │   ├── train2017
 │   │   ├── val2017
 │   │   ├── test2017
-│   ├── VOCdevkit
-│   │   ├── VOC2007
-│   │   ├── VOC2012
-
 ```
 
 ### Scripts
-[Here](https://gist.github.com/hellock/bf23cd7348c727d69d48682cb6909047) is
-a script for setting up mmdetection with conda.
+[Here](https://gist.github.com/hellock/bf23cd7348c727d69d48682cb6909047) is a script for setting up mmdetection with conda.
 
 ### Notice
 You can run `python(3) setup.py develop` or `pip install -v -e .` to install mmdetection if you want to make modifications to it frequently.

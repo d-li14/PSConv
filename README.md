@@ -3,34 +3,18 @@ Official implementation of our PSConv operator as described in [PSConv: Squeezin
 
 <p align="center"><img src="fig/psconv.png" width="600" /></p>
 
+We collect multi-scale feature representations in a finer granularity, by tactfully allocating a spectrum of dilation rates in the kernel lattice.
+
 ## Getting Started
 
 ### Installation
 
 Following the instructions from [INSTALL.md](INSTALL.md) for installation. More detailed guidance can be found from [MMDetection](https://github.com/open-mmlab/mmdetection).
 
-### Dataset
-
-It is recommended to symlink the dataset root to `$MMDETECTION/data`.
-If your folder structure is different, you may need to change the corresponding paths in config files.
-
-```
-mmdetection
-├── mmdet
-├── tools
-├── configs
-├── data
-│   ├── coco
-│   │   ├── annotations
-│   │   ├── train2017
-│   │   ├── val2017
-│   │   ├── test2017
-```
-
 
 ### Download ImageNet pre-trained checkpoints
 
-Fetch pre-trained [PS-ResNet-50](https://drive.google.com/file/d/155pB1vci62zQV6AmY4MsCw5zLL0qYmG4/view?usp=sharing), [PS-ResNet-101](https://drive.google.com/file/d/15kgctzliEguQHihJoNeG65Vld9DGEITV/view?usp=sharing) and [PS-ResNeXt-101 (32x4d)](https://drive.google.com/file/d/1dbttT3PvILRQvA9f0nKCLvQNg1a2QsVD/view?usp=sharing) and put them to your local path. Set the `pretrained` path of config file.
+Fetch pre-trained weights of [PS-ResNet-50](https://drive.google.com/file/d/155pB1vci62zQV6AmY4MsCw5zLL0qYmG4/view?usp=sharing), [PS-ResNet-101](https://drive.google.com/file/d/15kgctzliEguQHihJoNeG65Vld9DGEITV/view?usp=sharing) and [PS-ResNeXt-101 (32x4d)](https://drive.google.com/file/d/1dbttT3PvILRQvA9f0nKCLvQNg1a2QsVD/view?usp=sharing) backbones and put them to your local path. Set the `pretrained` path of config file and launch the training of detectors.
 
 ### Training
 
@@ -109,6 +93,8 @@ This implementation is built upon [MMDetection](https://github.com/open-mmlab/mm
 Since this project is finished nearly one year ago, we adapt our code from an early commit [713e98b](https://github.com/open-mmlab/mmdetection/commits/713e98bc1bfb842760df6be73b9520ee775d3c06).
 
 ## Citation
+
+If you find our work useful in your research, please consider citing:
 
 ```bibtex
 @InProceedings{Li_2020_ECCV,
