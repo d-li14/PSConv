@@ -1,5 +1,5 @@
 # Poly-Scale Convolution
-Official implementation of our PSConv operator as described in [PSConv: Squeezing Feature Pyramid into One Compact Poly-Scale Convolutional Layer]() (ECCV'20) by  [Duo Li](https://github.com/d-li14), [Anbang Yao](https://github.com/YaoAnbang) and [Qifeng Chen](https://github.com/CQFIO) on the [MS COCO 2017](https://cocodataset.org) benchmark.
+Official implementation of our PSConv operator as described in [PSConv: Squeezing Feature Pyramid into One Compact Poly-Scale Convolutional Layer](https://arxiv.org/abs/2007.06191) (ECCV'20) by  [Duo Li](https://github.com/d-li14), [Anbang Yao](https://github.com/YaoAnbang) and [Qifeng Chen](https://github.com/CQFIO) on the [MS COCO 2017](https://cocodataset.org) benchmark.
 
 <p align="center"><img src="fig/psconv.png" width="600" /></p>
 
